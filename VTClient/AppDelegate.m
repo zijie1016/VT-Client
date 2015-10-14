@@ -37,7 +37,7 @@
     {
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FirstLoad"];
         //显示导航页
-        NSLog(@"显示导航页");
+        NSLog(@"显示导航页");//cg
         mtbc.isFirstLoad = YES;
        
     }
