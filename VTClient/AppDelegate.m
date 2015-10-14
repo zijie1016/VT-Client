@@ -33,24 +33,24 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     VTMainTabBarController *mtbc = [storyboard instantiateViewControllerWithIdentifier:@"VTMainTabBarController"];
     
+    //判断是否第一次启动
     if([[NSUserDefaults standardUserDefaults] objectForKey:@"FirstLoad"] == nil)
     {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FirstLoad"];
-        //显示导航页
-        NSLog(@"显示导航页");//cg
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FirstLoad"]; //第一次启动，程序将会根据这个值载入欢迎界面
+
         mtbc.isFirstLoad = YES;
-       
     }
     else
     {
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"FirstLoad"];
-        self.window.rootViewController = mtbc;
-        NSLog(@"不是第一次启动 不再显示");
+        
+        //不是第一次启动。设置root view controller
         mtbc.isFirstLoad = NO;
+        self.window.rootViewController = mtbc;
     }
 
     
-    //this is your last chance
+
 
     return YES;
 }
