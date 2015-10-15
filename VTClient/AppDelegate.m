@@ -49,8 +49,7 @@
         self.window.rootViewController = mtbc;
     }
 
-    //sd
-
+    
 
     return YES;
 }
