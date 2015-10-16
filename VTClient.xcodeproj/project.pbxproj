@@ -16,6 +16,10 @@
 		0B16FB8B1BD09A2E007644F5 /* search-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16FB881BD09A2E007644F5 /* search-icon.png */; settings = {ASSET_TAGS = (); }; };
 		0B16FB8C1BD09A2E007644F5 /* search-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16FB891BD09A2E007644F5 /* search-icon@2x.png */; settings = {ASSET_TAGS = (); }; };
 		0B16FB8D1BD09A2E007644F5 /* search-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16FB8A1BD09A2E007644F5 /* search-icon@3x.png */; settings = {ASSET_TAGS = (); }; };
+		0B16FB911BD0A200007644F5 /* VTSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B16FB901BD0A200007644F5 /* VTSearchViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0B16FB951BD0C42F007644F5 /* backt.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16FB921BD0C42F007644F5 /* backt.png */; settings = {ASSET_TAGS = (); }; };
+		0B16FB961BD0C42F007644F5 /* backt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16FB931BD0C42F007644F5 /* backt@2x.png */; settings = {ASSET_TAGS = (); }; };
+		0B16FB971BD0C42F007644F5 /* backt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B16FB941BD0C42F007644F5 /* backt@3x.png */; settings = {ASSET_TAGS = (); }; };
 		0B17BBBE1BCFA371001A6781 /* VTChannelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B17BBB71BCFA371001A6781 /* VTChannelsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0B17BBBF1BCFA371001A6781 /* VTDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B17BBB91BCFA371001A6781 /* VTDiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
 		0B17BBC01BCFA371001A6781 /* VTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B17BBBB1BCFA371001A6781 /* VTHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -78,6 +82,11 @@
 		0B16FB881BD09A2E007644F5 /* search-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon.png"; sourceTree = "<group>"; };
 		0B16FB891BD09A2E007644F5 /* search-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon@2x.png"; sourceTree = "<group>"; };
 		0B16FB8A1BD09A2E007644F5 /* search-icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search-icon@3x.png"; sourceTree = "<group>"; };
+		0B16FB8F1BD0A200007644F5 /* VTSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTSearchViewController.h; path = "Controllers/Second Level Controllers/VTSearchViewController.h"; sourceTree = "<group>"; };
+		0B16FB901BD0A200007644F5 /* VTSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTSearchViewController.m; path = "Controllers/Second Level Controllers/VTSearchViewController.m"; sourceTree = "<group>"; };
+		0B16FB921BD0C42F007644F5 /* backt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backt.png; sourceTree = "<group>"; };
+		0B16FB931BD0C42F007644F5 /* backt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backt@2x.png"; sourceTree = "<group>"; };
+		0B16FB941BD0C42F007644F5 /* backt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backt@3x.png"; sourceTree = "<group>"; };
 		0B17BBB61BCFA371001A6781 /* VTChannelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTChannelsTableViewController.h; sourceTree = "<group>"; };
 		0B17BBB71BCFA371001A6781 /* VTChannelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTChannelsTableViewController.m; sourceTree = "<group>"; };
 		0B17BBB81BCFA371001A6781 /* VTDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDiscoverViewController.h; sourceTree = "<group>"; };
@@ -151,6 +160,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B16FB8E1BD0A12B007644F5 /* Second Level Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B16FB8F1BD0A200007644F5 /* VTSearchViewController.h */,
+				0B16FB901BD0A200007644F5 /* VTSearchViewController.m */,
+			);
+			name = "Second Level Controllers";
+			sourceTree = "<group>";
+		};
 		0B17BBB51BCFA371001A6781 /* Root Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +195,9 @@
 		0B17BBCC1BCFA9D3001A6781 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0B16FB921BD0C42F007644F5 /* backt.png */,
+				0B16FB931BD0C42F007644F5 /* backt@2x.png */,
+				0B16FB941BD0C42F007644F5 /* backt@3x.png */,
 				0B16FB881BD09A2E007644F5 /* search-icon.png */,
 				0B16FB891BD09A2E007644F5 /* search-icon@2x.png */,
 				0B16FB8A1BD09A2E007644F5 /* search-icon@3x.png */,
@@ -263,6 +284,7 @@
 		176146011BCBADA000DB7019 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0B16FB8E1BD0A12B007644F5 /* Second Level Controllers */,
 				0B17BBB51BCFA371001A6781 /* Root Controllers */,
 				176146021BCBADED00DB7019 /* VTWelcomeViewController.h */,
 				176146031BCBADED00DB7019 /* VTWelcomeViewController.m */,
@@ -380,6 +402,7 @@
 				0BB0384A1BCF960600F95A37 /* tabbar3@2x.png in Resources */,
 				0B16FB7D1BD08EDD007644F5 /* download@2x.png in Resources */,
 				0BB0384F1BCF960600F95A37 /* tabbaract1.png in Resources */,
+				0B16FB951BD0C42F007644F5 /* backt.png in Resources */,
 				0B16FB861BD0965C007644F5 /* history@2x.png in Resources */,
 				0BB038531BCF960600F95A37 /* tabbaract2@2x.png in Resources */,
 				0BB038271BCF88D000F95A37 /* w4.png in Resources */,
@@ -411,6 +434,7 @@
 				0BB038431BCF960600F95A37 /* tabbar1.png in Resources */,
 				0BB0381F1BCF88D000F95A37 /* w1@2x.png in Resources */,
 				0B16FB7E1BD08EDD007644F5 /* download@3x.png in Resources */,
+				0B16FB971BD0C42F007644F5 /* backt@3x.png in Resources */,
 				0BB038551BCF960600F95A37 /* tabbaract3.png in Resources */,
 				0B16FB851BD0965C007644F5 /* history.png in Resources */,
 				0B16FB871BD0965C007644F5 /* history@3x.png in Resources */,
@@ -422,6 +446,7 @@
 				0BB038511BCF960600F95A37 /* tabbaract1@3x.png in Resources */,
 				0BB038221BCF88D000F95A37 /* w2@2x.png in Resources */,
 				0B17BBCE1BCFA9D3001A6781 /* home_nav_bg.png in Resources */,
+				0B16FB961BD0C42F007644F5 /* backt@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +461,7 @@
 				176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */,
 				0B17BBC01BCFA371001A6781 /* VTHomeViewController.m in Sources */,
 				176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */,
+				0B16FB911BD0A200007644F5 /* VTSearchViewController.m in Sources */,
 				176145F71BCBA89B00DB7019 /* VTUser.m in Sources */,
 				17EE8C1E1BCA60920062C64E /* AppDelegate.m in Sources */,
 				0B17BBC11BCFA371001A6781 /* VTMineTableViewController.m in Sources */,

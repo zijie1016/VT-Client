@@ -10,4 +10,6 @@
 
 @interface VTHomeViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+
 @end
