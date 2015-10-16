@@ -81,13 +81,77 @@
                                             <constraint firstAttribute="height" constant="64" id="0z7-MY-e5k"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuB-ar-pue">
+                                        <rect key="frame" x="64" y="23" width="182" height="33"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YiE-vD-JZg">
+                                                <rect key="frame" x="0.0" y="0.0" width="154" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-h9-5tx">
+                                                <rect key="frame" x="154" y="0.0" width="28" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="JEs-BA-iv3"/>
+                                                    <constraint firstAttribute="width" constant="28" id="VUR-zt-vXl"/>
+                                                </constraints>
+                                                <state key="normal" image="search-icon.png"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="yhb-h9-5tx" secondAttribute="bottom" id="3fp-BO-5EI"/>
+                                            <constraint firstAttribute="height" constant="33" id="FnC-B6-Osr"/>
+                                            <constraint firstItem="YiE-vD-JZg" firstAttribute="leading" secondItem="xuB-ar-pue" secondAttribute="leading" id="JH5-uI-6CL"/>
+                                            <constraint firstAttribute="bottom" secondItem="YiE-vD-JZg" secondAttribute="bottom" id="Mp8-wd-uwU"/>
+                                            <constraint firstAttribute="trailing" secondItem="yhb-h9-5tx" secondAttribute="trailing" id="TZo-Th-Peu"/>
+                                            <constraint firstItem="YiE-vD-JZg" firstAttribute="top" secondItem="xuB-ar-pue" secondAttribute="top" id="UWb-70-jrL"/>
+                                            <constraint firstItem="yhb-h9-5tx" firstAttribute="leading" secondItem="YiE-vD-JZg" secondAttribute="trailing" id="ufq-og-fiH"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V2TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-Q5-mA0">
+                                        <rect key="frame" x="10" y="23" width="44" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Ang-rx-r66"/>
+                                            <constraint firstAttribute="height" constant="33" id="pQy-aL-UxO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkS-iD-PSI">
+                                        <rect key="frame" x="256" y="23" width="22" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="2y6-gA-v9I"/>
+                                            <constraint firstAttribute="width" constant="22" id="dvd-of-3Oz"/>
+                                        </constraints>
+                                        <state key="normal" image="history.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-HW-TzH">
+                                        <rect key="frame" x="288" y="23" width="22" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="3W2-Yy-tsH"/>
+                                            <constraint firstAttribute="width" constant="22" id="5tp-Is-Uct"/>
+                                        </constraints>
+                                        <state key="normal" image="download.png"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="Kau-vs-cMo" firstAttribute="leading" secondItem="AD7-eL-qP7" secondAttribute="leading" id="3F3-Yu-dmD"/>
-                                    <constraint firstItem="Kau-vs-cMo" firstAttribute="top" secondItem="AD7-eL-qP7" secondAttribute="top" id="FEp-I9-Pdi"/>
-                                    <constraint firstAttribute="trailing" secondItem="Kau-vs-cMo" secondAttribute="trailing" id="aSP-M9-QKc"/>
+                                    <constraint firstItem="xuB-ar-pue" firstAttribute="leading" secondItem="zEL-Q5-mA0" secondAttribute="trailing" constant="10" id="2HJ-le-QKG"/>
+                                    <constraint firstItem="ZkS-iD-PSI" firstAttribute="leading" secondItem="xuB-ar-pue" secondAttribute="trailing" constant="10" id="3zo-50-oFf"/>
+                                    <constraint firstAttribute="bottom" secondItem="ItW-HW-TzH" secondAttribute="bottom" constant="8" id="50W-SD-GfP"/>
+                                    <constraint firstAttribute="trailing" secondItem="ItW-HW-TzH" secondAttribute="trailing" constant="10" id="74c-t6-6Ix"/>
+                                    <constraint firstAttribute="bottom" secondItem="zEL-Q5-mA0" secondAttribute="bottom" constant="8" id="8v3-z2-zyK"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZkS-iD-PSI" secondAttribute="bottom" constant="8" id="Esz-KM-IZL"/>
+                                    <constraint firstItem="Kau-vs-cMo" firstAttribute="leading" secondItem="AD7-eL-qP7" secondAttribute="leading" id="Zp5-r4-iUq"/>
+                                    <constraint firstAttribute="bottom" secondItem="xuB-ar-pue" secondAttribute="bottom" constant="8" id="fL9-uc-IoR"/>
+                                    <constraint firstItem="Kau-vs-cMo" firstAttribute="top" secondItem="AD7-eL-qP7" secondAttribute="top" id="mRB-3X-DqH"/>
                                     <constraint firstAttribute="height" constant="64" id="nFS-rW-3OV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kau-vs-cMo" secondAttribute="trailing" id="wzk-A8-ieR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kau-vs-cMo" secondAttribute="bottom" id="xyz-3M-crU"/>
+                                    <constraint firstItem="zEL-Q5-mA0" firstAttribute="leading" secondItem="AD7-eL-qP7" secondAttribute="leading" constant="10" id="y3A-5S-X8S"/>
+                                    <constraint firstItem="ItW-HW-TzH" firstAttribute="leading" secondItem="ZkS-iD-PSI" secondAttribute="trailing" constant="10" id="yPh-wd-CHv"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -102,11 +166,12 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="navBar" destination="AD7-eL-qP7" id="EBC-CW-r3Z"/>
+                        <outlet property="searchBG" destination="xuB-ar-pue" id="Jcg-pm-Z0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Mo-jT-Yzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1343" y="-767"/>
+            <point key="canvasLocation" x="1343" y="-765"/>
         </scene>
         <!--发现-->
         <scene sceneID="VjX-AC-Xhy">
@@ -223,6 +288,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="download.png" width="19" height="16"/>
+        <image name="history.png" width="22" height="22"/>
         <image name="home_nav_bg.png" width="640" height="128"/>
+        <image name="search-icon.png" width="14" height="14"/>
     </resources>
 </document>

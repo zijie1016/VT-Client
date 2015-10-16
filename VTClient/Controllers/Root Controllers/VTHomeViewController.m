@@ -11,6 +11,7 @@
 @interface VTHomeViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *navBar;
+@property (weak, nonatomic) IBOutlet UIView *searchBG;
 
 @end
 
@@ -28,6 +29,10 @@
     //隐藏系统导航栏
     self.navigationController.navigationBarHidden = YES;
     
+    //设置搜索框View的圆角
+    self.searchBG.layer.masksToBounds = YES;
+    self.searchBG.layer.cornerRadius = 5;
+
 }
 
 @end
