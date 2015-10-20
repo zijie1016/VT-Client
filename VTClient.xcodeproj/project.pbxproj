@@ -61,6 +61,7 @@
 		0BB038581BCF960600F95A37 /* tabbaract4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038401BCF960600F95A37 /* tabbaract4.png */; settings = {ASSET_TAGS = (); }; };
 		0BB038591BCF960600F95A37 /* tabbaract4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038411BCF960600F95A37 /* tabbaract4@2x.png */; settings = {ASSET_TAGS = (); }; };
 		0BB0385A1BCF960600F95A37 /* tabbaract4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038421BCF960600F95A37 /* tabbaract4@3x.png */; settings = {ASSET_TAGS = (); }; };
+		0BFADC131BD5ED9300EA01EA /* SearchRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */; settings = {ASSET_TAGS = (); }; };
 		176145F71BCBA89B00DB7019 /* VTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 176145F61BCBA89B00DB7019 /* VTUser.m */; settings = {ASSET_TAGS = (); }; };
 		176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176146031BCBADED00DB7019 /* VTWelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761461F1BCBB53B00DB7019 /* VTMainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -132,6 +133,7 @@
 		0BB038401BCF960600F95A37 /* tabbaract4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaract4.png; sourceTree = "<group>"; };
 		0BB038411BCF960600F95A37 /* tabbaract4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaract4@2x.png"; sourceTree = "<group>"; };
 		0BB038421BCF960600F95A37 /* tabbaract4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaract4@3x.png"; sourceTree = "<group>"; };
+		0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SearchRecord.plist; sourceTree = "<group>"; };
 		176145F51BCBA89B00DB7019 /* VTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTUser.h; path = Models/VTUser.h; sourceTree = "<group>"; };
 		176145F61BCBA89B00DB7019 /* VTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTUser.m; path = Models/VTUser.m; sourceTree = "<group>"; };
 		176146021BCBADED00DB7019 /* VTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTWelcomeViewController.h; path = Controllers/VTWelcomeViewController.h; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 				17EE8C2D1BCA60920062C64E /* Info.plist */,
 				17EE8C251BCA60920062C64E /* VTClient.xcdatamodeld */,
 				17EE8C191BCA60910062C64E /* Supporting Files */,
+				0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */,
 			);
 			path = VTClient;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				17EE8C291BCA60920062C64E /* Assets.xcassets in Resources */,
 				0BB038591BCF960600F95A37 /* tabbaract4@2x.png in Resources */,
 				0BB038241BCF88D000F95A37 /* w3.png in Resources */,
+				0BFADC131BD5ED9300EA01EA /* SearchRecord.plist in Resources */,
 				0BB038201BCF88D000F95A37 /* w1@3x.png in Resources */,
 				0BB038431BCF960600F95A37 /* tabbar1.png in Resources */,
 				0BB0381F1BCF88D000F95A37 /* w1@2x.png in Resources */,

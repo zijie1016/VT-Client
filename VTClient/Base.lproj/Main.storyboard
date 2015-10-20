@@ -203,6 +203,9 @@
                                             <constraint firstAttribute="height" constant="29" id="c2q-fB-Tq1"/>
                                         </constraints>
                                         <state key="normal" image="search-icon.png"/>
+                                        <connections>
+                                            <action selector="search:" destination="rEQ-rb-wdl" eventType="touchUpInside" id="Pzx-E5-ftK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-t5-fIc">
                                         <rect key="frame" x="15" y="30" width="13" height="22"/>
@@ -247,6 +250,11 @@
                     <navigationItem key="navigationItem" id="R33-NH-wXB"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchButton" destination="uFQ-0b-1C3" id="7aU-TD-Uwd"/>
+                        <outlet property="searchTextField" destination="EC7-ck-tMU" id="qux-9Y-bQo"/>
+                        <outlet property="searchView" destination="7nZ-54-Hak" id="fvy-DU-7VG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ZH-On-NhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
