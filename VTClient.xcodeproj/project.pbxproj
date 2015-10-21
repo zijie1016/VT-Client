@@ -62,6 +62,13 @@
 		0BB038591BCF960600F95A37 /* tabbaract4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038411BCF960600F95A37 /* tabbaract4@2x.png */; settings = {ASSET_TAGS = (); }; };
 		0BB0385A1BCF960600F95A37 /* tabbaract4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038421BCF960600F95A37 /* tabbaract4@3x.png */; settings = {ASSET_TAGS = (); }; };
 		0BFADC131BD5ED9300EA01EA /* SearchRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */; settings = {ASSET_TAGS = (); }; };
+		0BFADC161BD612FB00EA01EA /* VTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC151BD612FB00EA01EA /* VTNetworkManager.m */; settings = {ASSET_TAGS = (); }; };
+		0BFADC1B1BD6163D00EA01EA /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC1A1BD6163D00EA01EA /* Utility.m */; settings = {ASSET_TAGS = (); }; };
+		0BFADC1E1BD61B4800EA01EA /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC1D1BD61B4800EA01EA /* JsonParser.m */; settings = {ASSET_TAGS = (); }; };
+		0BFADC211BD61DA000EA01EA /* VTMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC201BD61DA000EA01EA /* VTMovie.m */; settings = {ASSET_TAGS = (); }; };
+		0BFADC261BD62C4800EA01EA /* VTLWideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC241BD62C4800EA01EA /* VTLWideCell.m */; settings = {ASSET_TAGS = (); }; };
+		0BFADC271BD62C4800EA01EA /* VTLWideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC251BD62C4800EA01EA /* VTLWideCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0BFADC2A1BD72C1600EA01EA /* VTEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC291BD72C1600EA01EA /* VTEvent.m */; settings = {ASSET_TAGS = (); }; };
 		176145F71BCBA89B00DB7019 /* VTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 176145F61BCBA89B00DB7019 /* VTUser.m */; settings = {ASSET_TAGS = (); }; };
 		176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176146031BCBADED00DB7019 /* VTWelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761461F1BCBB53B00DB7019 /* VTMainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -135,6 +142,20 @@
 		0BB038411BCF960600F95A37 /* tabbaract4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaract4@2x.png"; sourceTree = "<group>"; };
 		0BB038421BCF960600F95A37 /* tabbaract4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaract4@3x.png"; sourceTree = "<group>"; };
 		0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SearchRecord.plist; sourceTree = "<group>"; };
+		0BFADC141BD612FB00EA01EA /* VTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTNetworkManager.h; path = Models/VTNetworkManager.h; sourceTree = "<group>"; };
+		0BFADC151BD612FB00EA01EA /* VTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTNetworkManager.m; path = Models/VTNetworkManager.m; sourceTree = "<group>"; };
+		0BFADC181BD6158C00EA01EA /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Global.h; path = Models/Global.h; sourceTree = "<group>"; };
+		0BFADC191BD6163D00EA01EA /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utility.h; path = Models/Utility.h; sourceTree = "<group>"; };
+		0BFADC1A1BD6163D00EA01EA /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utility.m; path = Models/Utility.m; sourceTree = "<group>"; };
+		0BFADC1C1BD61B4800EA01EA /* JsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JsonParser.h; path = Models/JsonParser.h; sourceTree = "<group>"; };
+		0BFADC1D1BD61B4800EA01EA /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JsonParser.m; path = Models/JsonParser.m; sourceTree = "<group>"; };
+		0BFADC1F1BD61DA000EA01EA /* VTMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTMovie.h; path = Models/VTMovie.h; sourceTree = "<group>"; };
+		0BFADC201BD61DA000EA01EA /* VTMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTMovie.m; path = Models/VTMovie.m; sourceTree = "<group>"; };
+		0BFADC231BD62C4800EA01EA /* VTLWideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTLWideCell.h; path = Views/Cells/VTLWideCell.h; sourceTree = "<group>"; };
+		0BFADC241BD62C4800EA01EA /* VTLWideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTLWideCell.m; path = Views/Cells/VTLWideCell.m; sourceTree = "<group>"; };
+		0BFADC251BD62C4800EA01EA /* VTLWideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTLWideCell.xib; path = Views/Cells/VTLWideCell.xib; sourceTree = "<group>"; };
+		0BFADC281BD72C1600EA01EA /* VTEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTEvent.h; path = Models/VTEvent.h; sourceTree = "<group>"; };
+		0BFADC291BD72C1600EA01EA /* VTEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTEvent.m; path = Models/VTEvent.m; sourceTree = "<group>"; };
 		176145F51BCBA89B00DB7019 /* VTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTUser.h; path = Models/VTUser.h; sourceTree = "<group>"; };
 		176145F61BCBA89B00DB7019 /* VTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTUser.m; path = Models/VTUser.m; sourceTree = "<group>"; };
 		176146021BCBADED00DB7019 /* VTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTWelcomeViewController.h; path = Controllers/VTWelcomeViewController.h; sourceTree = "<group>"; };
@@ -195,6 +216,7 @@
 		0B17BBCB1BCFA6DD001A6781 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0BFADC221BD62B9600EA01EA /* Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -279,11 +301,32 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		0BFADC221BD62B9600EA01EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0BFADC231BD62C4800EA01EA /* VTLWideCell.h */,
+				0BFADC241BD62C4800EA01EA /* VTLWideCell.m */,
+				0BFADC251BD62C4800EA01EA /* VTLWideCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		176145F41BCBA86300DB7019 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0BFADC181BD6158C00EA01EA /* Global.h */,
 				176145F51BCBA89B00DB7019 /* VTUser.h */,
 				176145F61BCBA89B00DB7019 /* VTUser.m */,
+				0BFADC141BD612FB00EA01EA /* VTNetworkManager.h */,
+				0BFADC151BD612FB00EA01EA /* VTNetworkManager.m */,
+				0BFADC191BD6163D00EA01EA /* Utility.h */,
+				0BFADC1A1BD6163D00EA01EA /* Utility.m */,
+				0BFADC1C1BD61B4800EA01EA /* JsonParser.h */,
+				0BFADC1D1BD61B4800EA01EA /* JsonParser.m */,
+				0BFADC1F1BD61DA000EA01EA /* VTMovie.h */,
+				0BFADC201BD61DA000EA01EA /* VTMovie.m */,
+				0BFADC281BD72C1600EA01EA /* VTEvent.h */,
+				0BFADC291BD72C1600EA01EA /* VTEvent.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -444,6 +487,7 @@
 				0BB0384C1BCF960600F95A37 /* tabbar4.png in Resources */,
 				17EE8C2C1BCA60920062C64E /* LaunchScreen.storyboard in Resources */,
 				0BB038291BCF88D000F95A37 /* w4@3x.png in Resources */,
+				0BFADC271BD62C4800EA01EA /* VTLWideCell.xib in Resources */,
 				0BB038461BCF960600F95A37 /* tabbar2.png in Resources */,
 				0BB0384D1BCF960600F95A37 /* tabbar4@2x.png in Resources */,
 				0BB038281BCF88D000F95A37 /* w4@2x.png in Resources */,
@@ -536,17 +580,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BFADC161BD612FB00EA01EA /* VTNetworkManager.m in Sources */,
 				0B17BBBE1BCFA371001A6781 /* VTChannelsTableViewController.m in Sources */,
 				176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */,
+				0BFADC2A1BD72C1600EA01EA /* VTEvent.m in Sources */,
 				0B17BBC01BCFA371001A6781 /* VTHomeViewController.m in Sources */,
 				176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */,
 				0B16FB911BD0A200007644F5 /* VTSearchViewController.m in Sources */,
+				0BFADC1E1BD61B4800EA01EA /* JsonParser.m in Sources */,
+				0BFADC261BD62C4800EA01EA /* VTLWideCell.m in Sources */,
 				176145F71BCBA89B00DB7019 /* VTUser.m in Sources */,
 				17EE8C1E1BCA60920062C64E /* AppDelegate.m in Sources */,
 				0B17BBC11BCFA371001A6781 /* VTMineTableViewController.m in Sources */,
 				0B17BBBF1BCFA371001A6781 /* VTDiscoverViewController.m in Sources */,
 				17EE8C271BCA60920062C64E /* VTClient.xcdatamodeld in Sources */,
 				17EE8C1B1BCA60910062C64E /* main.m in Sources */,
+				0BFADC1B1BD6163D00EA01EA /* Utility.m in Sources */,
+				0BFADC211BD61DA000EA01EA /* VTMovie.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

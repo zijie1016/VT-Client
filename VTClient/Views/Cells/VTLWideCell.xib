@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="220" id="Bgp-wo-EWT" customClass="VTLWideCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bgp-wo-EWT" id="gt9-58-yHY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hv2-Xj-7pi">
+                        <rect key="frame" x="8" y="0.0" width="304" height="154"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Hv2-Xj-7pi" secondAttribute="height" multiplier="152:77" id="W5R-ru-iNH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjM-4i-NEo">
+                        <rect key="frame" x="8" y="176" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="dS8-lc-0JK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeD-6x-1od">
+                        <rect key="frame" x="8" y="206" width="304" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="IAd-hY-czH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火影，你一生都看不完的遗憾" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWC-mI-L25">
+                        <rect key="frame" x="8" y="155" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="PmS-gM-g4b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="bjM-4i-NEo" firstAttribute="leading" secondItem="gt9-58-yHY" secondAttribute="leading" constant="8" id="2Ih-VK-oQx"/>
+                    <constraint firstItem="PWC-mI-L25" firstAttribute="leading" secondItem="gt9-58-yHY" secondAttribute="leading" constant="8" id="6Mk-lw-RbI"/>
+                    <constraint firstItem="BeD-6x-1od" firstAttribute="leading" secondItem="gt9-58-yHY" secondAttribute="leading" constant="8" id="9mh-gD-3ES"/>
+                    <constraint firstAttribute="trailing" secondItem="bjM-4i-NEo" secondAttribute="trailing" constant="8" id="FfN-Sq-qUH"/>
+                    <constraint firstAttribute="trailing" secondItem="BeD-6x-1od" secondAttribute="trailing" constant="8" id="Fmk-IV-S6W"/>
+                    <constraint firstItem="PWC-mI-L25" firstAttribute="top" secondItem="Hv2-Xj-7pi" secondAttribute="bottom" constant="1" id="OBU-FE-6cN"/>
+                    <constraint firstItem="bjM-4i-NEo" firstAttribute="top" secondItem="PWC-mI-L25" secondAttribute="bottom" id="Qa2-qF-1KP"/>
+                    <constraint firstItem="Hv2-Xj-7pi" firstAttribute="leading" secondItem="gt9-58-yHY" secondAttribute="leading" constant="8" id="gc8-hv-Jfo"/>
+                    <constraint firstAttribute="trailing" secondItem="PWC-mI-L25" secondAttribute="trailing" constant="8" id="kF7-w0-fVT"/>
+                    <constraint firstItem="BeD-6x-1od" firstAttribute="top" secondItem="bjM-4i-NEo" secondAttribute="bottom" constant="9" id="kGL-nX-NBH"/>
+                    <constraint firstAttribute="trailing" secondItem="Hv2-Xj-7pi" secondAttribute="trailing" constant="8" id="mWg-eu-Ndn"/>
+                    <constraint firstItem="Hv2-Xj-7pi" firstAttribute="top" secondItem="gt9-58-yHY" secondAttribute="top" id="tdT-hG-ECp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgv" destination="Hv2-Xj-7pi" id="6Wo-ZR-6In"/>
+                <outlet property="timeLabel" destination="bjM-4i-NEo" id="KB8-I9-4M1"/>
+                <outlet property="titleLabel" destination="PWC-mI-L25" id="IpG-ZN-HCm"/>
+            </connections>
+            <point key="canvasLocation" x="229" y="429"/>
+        </tableViewCell>
+    </objects>
+</document>

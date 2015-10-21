@@ -7,15 +7,20 @@
 //
 
 #import "VTSearchViewController.h"
+#import "VTNetworkManager.h"
+#import "VTLWideCell.h"
 
-@interface VTSearchViewController ()
+@interface VTSearchViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic,copy) NSString *plistPath;
 @property (nonatomic,strong)NSMutableArray *searchRecords;
+@property (nonatomic,strong)NSMutableArray *searchResults;
 
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UITableView *searchView;
+
+@property (nonatomic, strong) VTLWideCell *lwcell;
 
 
 @end
@@ -27,7 +32,6 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.hidesBottomBarWhenPushed = YES;
-        
     }
     return self;
 }
@@ -44,7 +48,7 @@
     //隐藏searchView
     self.searchView.hidden = YES;
     
-    //从SerachRecord读取搜索记录
+    //从SerachRecord.plist文件中读取搜索记录
     NSString *document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     self.plistPath = [document stringByAppendingPathComponent:@"SearchRecord.plist"];
     NSFileManager *file = [NSFileManager defaultManager];
@@ -64,8 +68,20 @@
     }
     
     self.searchRecords = [NSMutableArray arrayWithContentsOfFile:self.plistPath];
-    NSLog(@"--->>>>%@",self.searchRecords);
+    NSLog(@"--->>>>%@ searchRecords",self.searchRecords);
 
+}
+
+//请求搜索命令后得到的电影
+-(void)loadSearchMovies
+{
+    [VTNetworkManager SearchMovieByKeyWord:self.searchTextField.text andCallback:^(id obj) {
+        self.searchResults = obj;
+        NSLog(@"----->%@ loadSearchMovies",self.searchResults);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.searchView reloadData];
+        });
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -90,10 +106,74 @@
 //        self.searchRecordview.hidden = YES;
 //        self.clearBtn.hidden = YES;
 //        self.searchLabel.hidden = YES;
-//        [self loadSearchMovies];
+        [self loadSearchMovies];
 //        [self saveSearchRecord];
     }
 
+}
+
+#pragma mark - tableview delegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if (tableView.tag==102)
+        return self.searchResults.count;
+    else
+        return self.searchRecords.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView.tag==102)
+    {
+        static NSString *indentifier = @"cell";
+        self.lwcell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+        if (!self.lwcell)
+        {
+            self.lwcell = [[[NSBundle mainBundle] loadNibNamed:@"VTLWideCell" owner:self options:nil] lastObject];
+        }
+        self.lwcell.Hottheatre = [self.searchResults objectAtIndex:indexPath.row];
+        return self.lwcell;
+        
+    }
+    else
+    {
+//        static NSString *indentifier = @"recordCell";
+//        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+//        if (!cell)
+//        {
+//            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+//        }
+//        cell.textLabel.text = [self.searchRecords objectAtIndex:indexPath.row];
+//        
+//        return cell;
+        return nil;
+    }
+}
+
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if (tableView.tag==102)
+//    {
+//        PlayViewController *vc = [[PlayViewController alloc] initWithNibName:@"PlayViewController" bundle:nil];
+//        vc.movie = [self.searchMovies objectAtIndex:indexPath.row];
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
+//    else
+//    {
+//        self.searchTF.text = [self.searchRecords objectAtIndex:indexPath.row];
+//        [self loadSearchMovies];
+//        self.searchView.hidden = NO;
+//        [self.view bringSubviewToFront:self.searchView];
+//    }
+//}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView.tag==102) {
+        return [self.lwcell getHeight];
+    }
+    else
+        return 60;
 }
 
 
