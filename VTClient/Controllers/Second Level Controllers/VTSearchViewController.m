@@ -6,6 +6,8 @@
 //  Copyright © 2015年 Test. All rights reserved.
 //
 
+
+#import <QuartzCore/QuartzCore.h>
 #import "VTSearchViewController.h"
 #import "VTNetworkManager.h"
 #import "VTLWideCell.h"
@@ -47,6 +49,21 @@
 {
     //隐藏searchView
     self.searchView.hidden = YES;
+    
+    //设置searchView上边距
+    self.searchView.contentInset = UIEdgeInsetsMake(10, 0, 0, 0);
+    
+    //设置拉伸搜索框背景图片
+    //self.searchField.layer.cornerRadius = 5.0;
+    CGFloat top = 5;
+    CGFloat bottom = 5;
+    CGFloat left = 5;
+    CGFloat right = 5;
+    UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
+    UIImage *img = [UIImage imageNamed:@"serbox.png"];
+    img = [img resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
+    self.searchTextField.background = img;
+
     
     //从SerachRecord.plist文件中读取搜索记录
     NSString *document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];

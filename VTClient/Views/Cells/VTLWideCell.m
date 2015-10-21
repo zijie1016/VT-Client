@@ -33,9 +33,9 @@
 - (CGFloat)getHeight
 {
     //动态计算cell高度
-    CGFloat h = ([UIScreen mainScreen].bounds.size.width-16)*77/152;
+    CGFloat h = ([UIScreen mainScreen].bounds.size.width-10)*77/152;
     
-    return h + 60;
+    return h + 66;
 }
 
 @end
