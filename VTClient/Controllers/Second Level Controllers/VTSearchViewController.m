@@ -96,7 +96,10 @@
 //请求搜索命令后得到的电影
 -(void)loadSearchMovies
 {
-    [VTNetworkManager SearchMovieByKeyWord:self.searchTextField.text andCallback:^(id obj) {
+    // 如果没有输入关键，直接搜索placehoder
+    NSString *keyWord = [self.searchTextField.text isEqualToString:@""] ? self.searchTextField.placeholder : self.searchTextField.text;
+    
+    [VTNetworkManager SearchMovieByKeyWord:keyWord andCallback:^(id obj) {
         self.searchResults = obj;
         NSLog(@"----->%@ loadSearchMovies",self.searchResults);
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -135,14 +138,11 @@
     // 收起小键盘
     [self.searchTextField resignFirstResponder];
     
-    if (![self.searchTextField.text isEqualToString:@""])
-    {
-        self.searchView.hidden = NO;
-        self.searchRecordView.hidden = YES;
+    self.searchView.hidden = NO;
+    self.searchRecordView.hidden = YES;
 
-        [self loadSearchMovies];
-        [self saveSearchRecords];
-    }
+    [self loadSearchMovies];
+    [self saveSearchRecords];
 }
 
 // 删除指定位置的单条搜索记录
@@ -163,9 +163,13 @@
 //保存搜索记录
 -(void)saveSearchRecords
 {
+    // 如果没有输入关键，直接搜索placehoder
+    NSString *keyWord = [self.searchTextField.text isEqualToString:@""] ? self.searchTextField.placeholder : self.searchTextField.text;
+
+    
     //不保存重复的搜索关键词
-    if (![self.searchRecords containsObject:self.searchTextField.text])
-        [self.searchRecords addObject:self.searchTextField.text];
+    if (![self.searchRecords containsObject:keyWord])
+        [self.searchRecords addObject:keyWord];
     
     [self.searchRecords writeToFile:self.plistPath atomically:YES];
     
