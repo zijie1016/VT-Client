@@ -79,6 +79,7 @@
 		0BFADC681BD8DEC000EA01EA /* time@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC621BD8DEC000EA01EA /* time@3x.png */; settings = {ASSET_TAGS = (); }; };
 		0BFADC6C1BD9D95200EA01EA /* VTSearchRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */; settings = {ASSET_TAGS = (); }; };
 		0BFADC6D1BD9D95200EA01EA /* VTSearchRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0BFADCA71BDA344F00EA01EA /* serbox_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADCA61BDA344F00EA01EA /* serbox_home.png */; settings = {ASSET_TAGS = (); }; };
 		176145F71BCBA89B00DB7019 /* VTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 176145F61BCBA89B00DB7019 /* VTUser.m */; settings = {ASSET_TAGS = (); }; };
 		176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176146031BCBADED00DB7019 /* VTWelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761461F1BCBB53B00DB7019 /* VTMainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -178,6 +179,7 @@
 		0BFADC691BD9D95200EA01EA /* VTSearchRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTSearchRecordCell.h; path = Views/Cells/VTSearchRecordCell.h; sourceTree = "<group>"; };
 		0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTSearchRecordCell.m; path = Views/Cells/VTSearchRecordCell.m; sourceTree = "<group>"; };
 		0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTSearchRecordCell.xib; path = Views/Cells/VTSearchRecordCell.xib; sourceTree = "<group>"; };
+		0BFADCA61BDA344F00EA01EA /* serbox_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serbox_home.png; sourceTree = "<group>"; };
 		176145F51BCBA89B00DB7019 /* VTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTUser.h; path = Models/VTUser.h; sourceTree = "<group>"; };
 		176145F61BCBA89B00DB7019 /* VTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTUser.m; path = Models/VTUser.m; sourceTree = "<group>"; };
 		176146021BCBADED00DB7019 /* VTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTWelcomeViewController.h; path = Controllers/VTWelcomeViewController.h; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		0B17BBCC1BCFA9D3001A6781 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0BFADCA61BDA344F00EA01EA /* serbox_home.png */,
 				0BFADC5D1BD8DEC000EA01EA /* delet.png */,
 				0BFADC5E1BD8DEC000EA01EA /* delet@2x.png */,
 				0BFADC5F1BD8DEC000EA01EA /* delet@3x.png */,
@@ -523,6 +526,7 @@
 				0BB0384C1BCF960600F95A37 /* tabbar4.png in Resources */,
 				17EE8C2C1BCA60920062C64E /* LaunchScreen.storyboard in Resources */,
 				0BFADC631BD8DEC000EA01EA /* delet.png in Resources */,
+				0BFADCA71BDA344F00EA01EA /* serbox_home.png in Resources */,
 				0BB038291BCF88D000F95A37 /* w4@3x.png in Resources */,
 				0BFADC271BD62C4800EA01EA /* VTLWideCell.xib in Resources */,
 				0BFADC661BD8DEC000EA01EA /* time.png in Resources */,

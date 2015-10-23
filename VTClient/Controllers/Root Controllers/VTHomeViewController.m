@@ -11,7 +11,7 @@
 @interface VTHomeViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *navBar;
-@property (weak, nonatomic) IBOutlet UIView *searchBG;
+
 
 @end
 
@@ -26,13 +26,18 @@
 //设置自定义的导航栏
 - (void)setupNavBar
 {
-    
-    //设置搜索框View的圆角
-    self.searchBG.layer.masksToBounds = YES;
-    self.searchBG.layer.cornerRadius = 5;
-    
     //设置搜索框text field的代理（self)
     self.searchTextField.delegate = self;
+    
+    //设置拉伸搜索框背景图片
+    CGFloat top = 5;
+    CGFloat bottom = 5;
+    CGFloat left = 5;
+    CGFloat right = 5;
+    UIEdgeInsets insets = UIEdgeInsetsMake(top, left, bottom, right);
+    UIImage *img = [UIImage imageNamed:@"serbox_home.png"];
+    img = [img resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
+    self.searchTextField.background = img;
 }
 
 - (void)viewDidAppear:(BOOL)animated
