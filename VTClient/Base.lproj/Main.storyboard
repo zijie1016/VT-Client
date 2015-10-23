@@ -187,15 +187,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-wO-xYg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EC7-ck-tMU">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="警察李酒瓶" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EC7-ck-tMU" customClass="VTTextField">
                                         <rect key="frame" x="8" y="28" width="259" height="28"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="tintColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="tF3-Sl-Kv7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="rEQ-rb-wdl" id="xnf-dh-805"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-t5-fIc">
                                         <rect key="frame" x="268" y="31" width="50" height="22"/>
@@ -245,6 +246,17 @@
                                     <constraint firstItem="mmj-do-auK" firstAttribute="top" secondItem="uDu-t5-fIc" secondAttribute="bottom" constant="10" id="yHT-mT-erw"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" tag="103" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="d23-JW-soH">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rEQ-rb-wdl" id="4Qu-zT-uZf"/>
+                                    <outlet property="delegate" destination="rEQ-rb-wdl" id="TCR-1s-aBy"/>
+                                </connections>
+                            </tableView>
                             <tableView clipsSubviews="YES" tag="102" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7nZ-54-Hak">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -256,14 +268,18 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="7nZ-54-Hak" firstAttribute="leading" secondItem="29Q-Hk-EtB" secondAttribute="leading" id="2et-5c-KPl"/>
                             <constraint firstAttribute="trailing" secondItem="c9G-wO-xYg" secondAttribute="trailing" id="7FI-jd-xek"/>
-                            <constraint firstAttribute="trailing" secondItem="7nZ-54-Hak" secondAttribute="trailing" id="8o4-tV-A08"/>
+                            <constraint firstItem="7nZ-54-Hak" firstAttribute="top" secondItem="c9G-wO-xYg" secondAttribute="bottom" id="84J-IP-v8L"/>
+                            <constraint firstItem="18i-r9-z99" firstAttribute="top" secondItem="7nZ-54-Hak" secondAttribute="bottom" id="DvE-sV-sTw"/>
                             <constraint firstItem="c9G-wO-xYg" firstAttribute="leading" secondItem="29Q-Hk-EtB" secondAttribute="leading" id="Dwj-p2-i4Y"/>
-                            <constraint firstItem="7nZ-54-Hak" firstAttribute="top" secondItem="c9G-wO-xYg" secondAttribute="bottom" id="Ihh-r3-Uue"/>
-                            <constraint firstItem="18i-r9-z99" firstAttribute="top" secondItem="7nZ-54-Hak" secondAttribute="bottom" id="VCn-UC-Wca"/>
-                            <constraint firstItem="7nZ-54-Hak" firstAttribute="leading" secondItem="29Q-Hk-EtB" secondAttribute="leading" id="p7b-Sl-UlA"/>
+                            <constraint firstAttribute="trailing" secondItem="7nZ-54-Hak" secondAttribute="trailing" id="KNh-nT-X4P"/>
+                            <constraint firstAttribute="trailing" secondItem="d23-JW-soH" secondAttribute="trailing" id="KWa-J4-C7P"/>
+                            <constraint firstItem="d23-JW-soH" firstAttribute="leading" secondItem="29Q-Hk-EtB" secondAttribute="leading" id="XHm-Hq-0vj"/>
+                            <constraint firstItem="d23-JW-soH" firstAttribute="top" secondItem="c9G-wO-xYg" secondAttribute="bottom" id="a3g-gf-Ie3"/>
+                            <constraint firstItem="18i-r9-z99" firstAttribute="top" secondItem="d23-JW-soH" secondAttribute="bottom" id="mWx-JU-SMx"/>
                             <constraint firstItem="c9G-wO-xYg" firstAttribute="top" secondItem="29Q-Hk-EtB" secondAttribute="top" id="qA9-J2-Q7i"/>
                         </constraints>
                     </view>
@@ -272,6 +288,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchButton" destination="uFQ-0b-1C3" id="7aU-TD-Uwd"/>
+                        <outlet property="searchRecordView" destination="d23-JW-soH" id="y7Y-Ak-KJo"/>
                         <outlet property="searchTextField" destination="EC7-ck-tMU" id="qux-9Y-bQo"/>
                         <outlet property="searchView" destination="7nZ-54-Hak" id="fvy-DU-7VG"/>
                     </connections>

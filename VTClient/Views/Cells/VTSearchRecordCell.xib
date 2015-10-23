@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="35" id="KGk-i7-Jjw" customClass="VTSearchRecordCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time.png" translatesAutoresizingMaskIntoConstraints="NO" id="CJh-Cg-XVG">
+                        <rect key="frame" x="12" y="14" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="VVn-rC-U4R"/>
+                            <constraint firstAttribute="width" constant="13" id="Zg2-nk-ee8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-0H-qAs">
+                        <rect key="frame" x="31" y="10" width="251" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Fmj-7N-u8C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rcv-Ov-g41">
+                        <rect key="frame" x="290" y="9" width="28" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="04v-DP-KZs"/>
+                            <constraint firstAttribute="width" constant="28" id="qlT-h0-aHb"/>
+                        </constraints>
+                        <state key="normal" image="delet.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Rcv-Ov-g41" secondAttribute="trailing" constant="2" id="ECc-qQ-uRN"/>
+                    <constraint firstItem="CJh-Cg-XVG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="c1w-ga-vpA"/>
+                    <constraint firstItem="FWe-0H-qAs" firstAttribute="leading" secondItem="CJh-Cg-XVG" secondAttribute="trailing" constant="6" id="dWL-LZ-8Ov"/>
+                    <constraint firstItem="CJh-Cg-XVG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="kQX-HO-Z1p"/>
+                    <constraint firstItem="FWe-0H-qAs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="rgE-Na-KPd"/>
+                    <constraint firstItem="Rcv-Ov-g41" firstAttribute="leading" secondItem="FWe-0H-qAs" secondAttribute="trailing" constant="8" id="xXW-iq-1XO"/>
+                    <constraint firstItem="Rcv-Ov-g41" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="yas-pH-UPY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deleteButton" destination="Rcv-Ov-g41" id="zmB-hA-eum"/>
+                <outlet property="recordLabel" destination="FWe-0H-qAs" id="ZKS-ZE-rXH"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="337"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delet.png" width="11" height="11"/>
+        <image name="time.png" width="13" height="13"/>
+    </resources>
+</document>
