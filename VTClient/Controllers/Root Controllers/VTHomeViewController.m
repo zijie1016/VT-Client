@@ -7,6 +7,7 @@
 //
 
 #import "VTHomeViewController.h"
+#import "VTDownloadViewController.h"
 
 @interface VTHomeViewController () <UITextFieldDelegate>
 
@@ -38,18 +39,13 @@
     UIImage *img = [UIImage imageNamed:@"serbox_home.png"];
     img = [img resizableImageWithCapInsets:insets resizingMode:UIImageResizingModeStretch];
     self.searchTextField.background = img;
+
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     //隐藏系统导航栏
     self.navigationController.navigationBarHidden = YES;
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    //显示系统导航栏
-    //self.navigationController.navigationBarHidden = NO;
 }
 
 //serachTextField的delegate方法
@@ -74,5 +70,14 @@
 {
     [self performSegueWithIdentifier:@"searchvc" sender:nil];
 }
+
+//转到下载任务界面
+- (IBAction)toDownloadList:(id)sender
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    VTDownloadViewController *dvc = [storyboard instantiateViewControllerWithIdentifier:@"VTDownloadViewController"];
+    [self.navigationController pushViewController:dvc animated:YES];
+}
+
 
 @end

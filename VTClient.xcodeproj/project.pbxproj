@@ -80,6 +80,7 @@
 		0BFADC6C1BD9D95200EA01EA /* VTSearchRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */; settings = {ASSET_TAGS = (); }; };
 		0BFADC6D1BD9D95200EA01EA /* VTSearchRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */; settings = {ASSET_TAGS = (); }; };
 		0BFADCA71BDA344F00EA01EA /* serbox_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADCA61BDA344F00EA01EA /* serbox_home.png */; settings = {ASSET_TAGS = (); }; };
+		0BFADCAA1BDDC4DA00EA01EA /* VTDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADCA91BDDC4DA00EA01EA /* VTDownloadViewController.m */; settings = {ASSET_TAGS = (); }; };
 		176145F71BCBA89B00DB7019 /* VTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 176145F61BCBA89B00DB7019 /* VTUser.m */; settings = {ASSET_TAGS = (); }; };
 		176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 176146031BCBADED00DB7019 /* VTWelcomeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761461F1BCBB53B00DB7019 /* VTMainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -180,6 +181,8 @@
 		0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTSearchRecordCell.m; path = Views/Cells/VTSearchRecordCell.m; sourceTree = "<group>"; };
 		0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTSearchRecordCell.xib; path = Views/Cells/VTSearchRecordCell.xib; sourceTree = "<group>"; };
 		0BFADCA61BDA344F00EA01EA /* serbox_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serbox_home.png; sourceTree = "<group>"; };
+		0BFADCA81BDDC4DA00EA01EA /* VTDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTDownloadViewController.h; path = "Controllers/Second Level Controllers/VTDownloadViewController.h"; sourceTree = "<group>"; };
+		0BFADCA91BDDC4DA00EA01EA /* VTDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTDownloadViewController.m; path = "Controllers/Second Level Controllers/VTDownloadViewController.m"; sourceTree = "<group>"; };
 		176145F51BCBA89B00DB7019 /* VTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTUser.h; path = Models/VTUser.h; sourceTree = "<group>"; };
 		176145F61BCBA89B00DB7019 /* VTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTUser.m; path = Models/VTUser.m; sourceTree = "<group>"; };
 		176146021BCBADED00DB7019 /* VTWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTWelcomeViewController.h; path = Controllers/VTWelcomeViewController.h; sourceTree = "<group>"; };
@@ -217,6 +220,8 @@
 			children = (
 				0B16FB8F1BD0A200007644F5 /* VTSearchViewController.h */,
 				0B16FB901BD0A200007644F5 /* VTSearchViewController.m */,
+				0BFADCA81BDDC4DA00EA01EA /* VTDownloadViewController.h */,
+				0BFADCA91BDDC4DA00EA01EA /* VTDownloadViewController.m */,
 			);
 			name = "Second Level Controllers";
 			sourceTree = "<group>";
@@ -632,6 +637,7 @@
 				176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */,
 				0BFADC2A1BD72C1600EA01EA /* VTEvent.m in Sources */,
 				0B17BBC01BCFA371001A6781 /* VTHomeViewController.m in Sources */,
+				0BFADCAA1BDDC4DA00EA01EA /* VTDownloadViewController.m in Sources */,
 				176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */,
 				0B16FB911BD0A200007644F5 /* VTSearchViewController.m in Sources */,
 				0BFADC1E1BD61B4800EA01EA /* JsonParser.m in Sources */,

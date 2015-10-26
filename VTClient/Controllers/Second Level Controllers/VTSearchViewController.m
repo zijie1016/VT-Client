@@ -49,6 +49,11 @@
 
 - (void)initSearch
 {
+    // UITextField输入时向下移位bug解决方案
+    self.modalPresentationCapturesStatusBarAppearance = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    
     [self.searchTextField becomeFirstResponder];
     
     //隐藏searchView,只显示搜索历史searchRecordView
@@ -120,7 +125,7 @@
 // 返回首页
 - (IBAction)goBack:(id)sender
 {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 // 搜索按钮响应

@@ -52,7 +52,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="backt.png" id="a4j-R7-dPA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="9b2-0e-nIT" kind="relationship" relationship="rootViewController" id="7oB-vb-m2h"/>
@@ -61,6 +66,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9x-f6-3Hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955" y="-765"/>
+        </scene>
+        <!--下载管理-->
+        <scene sceneID="u98-s2-RPG">
+            <objects>
+                <viewController storyboardIdentifier="VTDownloadViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="18b-oH-Btt" customClass="VTDownloadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N2w-sD-uWg"/>
+                        <viewControllerLayoutGuide type="bottom" id="L2g-R3-res"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c6Y-xp-TuD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7PK-pa-7Hr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="42"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-nK-4JN">
+                                        <rect key="frame" x="80" y="7" width="160" height="29"/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="7fG-za-ILd"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="正在下载"/>
+                                            <segment title="已完成"/>
+                                        </segments>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WcS-nK-4JN" firstAttribute="leading" secondItem="7PK-pa-7Hr" secondAttribute="leading" constant="80" id="2hM-gb-bES"/>
+                                    <constraint firstAttribute="height" constant="42" id="3OT-9i-JOF"/>
+                                    <constraint firstItem="WcS-nK-4JN" firstAttribute="top" secondItem="7PK-pa-7Hr" secondAttribute="top" constant="7" id="Q6Z-cg-pbj"/>
+                                    <constraint firstAttribute="bottom" secondItem="WcS-nK-4JN" secondAttribute="bottom" constant="7" id="fR8-nd-eBJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="WcS-nK-4JN" secondAttribute="trailing" constant="80" id="rfT-4q-S8q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7PK-pa-7Hr" firstAttribute="top" secondItem="N2w-sD-uWg" secondAttribute="bottom" id="c4P-XK-5AG"/>
+                            <constraint firstItem="7PK-pa-7Hr" firstAttribute="leading" secondItem="c6Y-xp-TuD" secondAttribute="leading" id="ksa-U9-lFR"/>
+                            <constraint firstAttribute="trailing" secondItem="7PK-pa-7Hr" secondAttribute="trailing" id="npm-bb-bT0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="下载管理" id="gir-tZ-McS"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrN-hZ-xn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="-1414"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="FXR-OW-jjg">
@@ -85,7 +142,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
-                                            <segue destination="rEQ-rb-wdl" kind="push" identifier="searchvc" id="dra-5k-sJb"/>
+                                            <segue destination="rEQ-rb-wdl" kind="push" identifier="searchvc" animates="NO" id="dra-5k-sJb"/>
                                         </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V2TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-Q5-mA0">
@@ -113,6 +170,9 @@
                                             <constraint firstAttribute="width" constant="22" id="5tp-Is-Uct"/>
                                         </constraints>
                                         <state key="normal" image="download.png"/>
+                                        <connections>
+                                            <action selector="toDownloadList:" destination="9b2-0e-nIT" eventType="touchUpInside" id="k4I-d8-LPh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-h9-5tx">
                                         <rect key="frame" x="64" y="32" width="25" height="25"/>
@@ -176,13 +236,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-wO-xYg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                 <subviews>
-                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="醉红尘" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EC7-ck-tMU" customClass="VTTextField">
+                                    <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="醉红尘" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EC7-ck-tMU" customClass="VTTextField">
                                         <rect key="frame" x="8" y="28" width="259" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="tF3-Sl-Kv7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="search"/>
                                         <connections>
                                             <outlet property="delegate" destination="rEQ-rb-wdl" id="xnf-dh-805"/>
                                         </connections>
