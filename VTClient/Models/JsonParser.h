@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "VTMovie.h"
+@class VTEvent;
+@class VTMovie;
 
 @interface JsonParser : NSObject
 
 +(VTMovie *)paraserMovieByDic:(NSDictionary *)dic;
-
++(VTEvent *)parserEventByDic:(NSDictionary *)dic;
 @end

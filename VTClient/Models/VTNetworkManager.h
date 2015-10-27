@@ -16,4 +16,7 @@ typedef void (^Callback)(id obj);
 //搜索  接口video/search!list.do 参数keyword
 +(void)SearchMovieByKeyWord:(NSString *)keyword andCallback:(Callback)callback;
 
+//请求首页热点话题
++(void)requestHotTopicBySubId:(NSString *)SubId andPageSize:(NSString *)pageSize andCallback:(Callback)callback;
+
 @end

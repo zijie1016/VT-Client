@@ -61,6 +61,17 @@
 		0BB038581BCF960600F95A37 /* tabbaract4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038401BCF960600F95A37 /* tabbaract4.png */; settings = {ASSET_TAGS = (); }; };
 		0BB038591BCF960600F95A37 /* tabbaract4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038411BCF960600F95A37 /* tabbaract4@2x.png */; settings = {ASSET_TAGS = (); }; };
 		0BB0385A1BCF960600F95A37 /* tabbaract4@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BB038421BCF960600F95A37 /* tabbaract4@3x.png */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A4D1BDF12C900B9EC7A /* VTCarouselCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A4B1BDF12C900B9EC7A /* VTCarouselCell.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A4E1BDF12C900B9EC7A /* VTCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA5A4C1BDF12C900B9EC7A /* VTCarouselCell.xib */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A521BDF50EA00B9EC7A /* VTEventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A501BDF50EA00B9EC7A /* VTEventDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A941BDF52FA00B9EC7A /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A861BDF52FA00B9EC7A /* DLCustomSlideView.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A951BDF52FA00B9EC7A /* DLFixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A881BDF52FA00B9EC7A /* DLFixedTabbarView.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A961BDF52FA00B9EC7A /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A8A1BDF52FA00B9EC7A /* DLLRUCache.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A971BDF52FA00B9EC7A /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A8C1BDF52FA00B9EC7A /* DLScrollTabbarView.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A981BDF52FA00B9EC7A /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A8F1BDF52FA00B9EC7A /* DLSlideView.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A991BDF52FA00B9EC7A /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A911BDF52FA00B9EC7A /* DLTabedSlideView.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A9A1BDF52FA00B9EC7A /* DLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDA5A931BDF52FA00B9EC7A /* DLUtility.m */; settings = {ASSET_TAGS = (); }; };
+		0BDA5A9C1BDF57E800B9EC7A /* VTSearchRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDA5A9B1BDF57E800B9EC7A /* VTSearchRecordCell.xib */; settings = {ASSET_TAGS = (); }; };
 		0BFADC131BD5ED9300EA01EA /* SearchRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */; settings = {ASSET_TAGS = (); }; };
 		0BFADC161BD612FB00EA01EA /* VTNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC151BD612FB00EA01EA /* VTNetworkManager.m */; settings = {ASSET_TAGS = (); }; };
 		0BFADC1B1BD6163D00EA01EA /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC1A1BD6163D00EA01EA /* Utility.m */; settings = {ASSET_TAGS = (); }; };
@@ -78,7 +89,6 @@
 		0BFADC671BD8DEC000EA01EA /* time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC611BD8DEC000EA01EA /* time@2x.png */; settings = {ASSET_TAGS = (); }; };
 		0BFADC681BD8DEC000EA01EA /* time@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC621BD8DEC000EA01EA /* time@3x.png */; settings = {ASSET_TAGS = (); }; };
 		0BFADC6C1BD9D95200EA01EA /* VTSearchRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */; settings = {ASSET_TAGS = (); }; };
-		0BFADC6D1BD9D95200EA01EA /* VTSearchRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */; settings = {ASSET_TAGS = (); }; };
 		0BFADCA71BDA344F00EA01EA /* serbox_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFADCA61BDA344F00EA01EA /* serbox_home.png */; settings = {ASSET_TAGS = (); }; };
 		0BFADCAA1BDDC4DA00EA01EA /* VTDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BFADCA91BDDC4DA00EA01EA /* VTDownloadViewController.m */; settings = {ASSET_TAGS = (); }; };
 		176145F71BCBA89B00DB7019 /* VTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 176145F61BCBA89B00DB7019 /* VTUser.m */; settings = {ASSET_TAGS = (); }; };
@@ -153,6 +163,28 @@
 		0BB038401BCF960600F95A37 /* tabbaract4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbaract4.png; sourceTree = "<group>"; };
 		0BB038411BCF960600F95A37 /* tabbaract4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaract4@2x.png"; sourceTree = "<group>"; };
 		0BB038421BCF960600F95A37 /* tabbaract4@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbaract4@3x.png"; sourceTree = "<group>"; };
+		0BDA5A4A1BDF12C900B9EC7A /* VTCarouselCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTCarouselCell.h; path = Views/Cells/Home/VTCarouselCell.h; sourceTree = "<group>"; };
+		0BDA5A4B1BDF12C900B9EC7A /* VTCarouselCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTCarouselCell.m; path = Views/Cells/Home/VTCarouselCell.m; sourceTree = "<group>"; };
+		0BDA5A4C1BDF12C900B9EC7A /* VTCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTCarouselCell.xib; path = Views/Cells/Home/VTCarouselCell.xib; sourceTree = "<group>"; };
+		0BDA5A4F1BDF50EA00B9EC7A /* VTEventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTEventDetailViewController.h; path = "Controllers/Second Level Controllers/VTEventDetailViewController.h"; sourceTree = "<group>"; };
+		0BDA5A501BDF50EA00B9EC7A /* VTEventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTEventDetailViewController.m; path = "Controllers/Second Level Controllers/VTEventDetailViewController.m"; sourceTree = "<group>"; };
+		0BDA5A841BDF52FA00B9EC7A /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLCacheProtocol.h; path = "Third Party/DLSlide/DLCacheProtocol.h"; sourceTree = "<group>"; };
+		0BDA5A851BDF52FA00B9EC7A /* DLCustomSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLCustomSlideView.h; path = "Third Party/DLSlide/DLCustomSlideView.h"; sourceTree = "<group>"; };
+		0BDA5A861BDF52FA00B9EC7A /* DLCustomSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLCustomSlideView.m; path = "Third Party/DLSlide/DLCustomSlideView.m"; sourceTree = "<group>"; };
+		0BDA5A871BDF52FA00B9EC7A /* DLFixedTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLFixedTabbarView.h; path = "Third Party/DLSlide/DLFixedTabbarView.h"; sourceTree = "<group>"; };
+		0BDA5A881BDF52FA00B9EC7A /* DLFixedTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLFixedTabbarView.m; path = "Third Party/DLSlide/DLFixedTabbarView.m"; sourceTree = "<group>"; };
+		0BDA5A891BDF52FA00B9EC7A /* DLLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLLRUCache.h; path = "Third Party/DLSlide/DLLRUCache.h"; sourceTree = "<group>"; };
+		0BDA5A8A1BDF52FA00B9EC7A /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLLRUCache.m; path = "Third Party/DLSlide/DLLRUCache.m"; sourceTree = "<group>"; };
+		0BDA5A8B1BDF52FA00B9EC7A /* DLScrollTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLScrollTabbarView.h; path = "Third Party/DLSlide/DLScrollTabbarView.h"; sourceTree = "<group>"; };
+		0BDA5A8C1BDF52FA00B9EC7A /* DLScrollTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLScrollTabbarView.m; path = "Third Party/DLSlide/DLScrollTabbarView.m"; sourceTree = "<group>"; };
+		0BDA5A8D1BDF52FA00B9EC7A /* DLSlideTabbarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLSlideTabbarProtocol.h; path = "Third Party/DLSlide/DLSlideTabbarProtocol.h"; sourceTree = "<group>"; };
+		0BDA5A8E1BDF52FA00B9EC7A /* DLSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLSlideView.h; path = "Third Party/DLSlide/DLSlideView.h"; sourceTree = "<group>"; };
+		0BDA5A8F1BDF52FA00B9EC7A /* DLSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLSlideView.m; path = "Third Party/DLSlide/DLSlideView.m"; sourceTree = "<group>"; };
+		0BDA5A901BDF52FA00B9EC7A /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLTabedSlideView.h; path = "Third Party/DLSlide/DLTabedSlideView.h"; sourceTree = "<group>"; };
+		0BDA5A911BDF52FA00B9EC7A /* DLTabedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLTabedSlideView.m; path = "Third Party/DLSlide/DLTabedSlideView.m"; sourceTree = "<group>"; };
+		0BDA5A921BDF52FA00B9EC7A /* DLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLUtility.h; path = "Third Party/DLSlide/DLUtility.h"; sourceTree = "<group>"; };
+		0BDA5A931BDF52FA00B9EC7A /* DLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLUtility.m; path = "Third Party/DLSlide/DLUtility.m"; sourceTree = "<group>"; };
+		0BDA5A9B1BDF57E800B9EC7A /* VTSearchRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTSearchRecordCell.xib; path = Views/Cells/VTSearchRecordCell.xib; sourceTree = "<group>"; };
 		0BFADC121BD5ED9300EA01EA /* SearchRecord.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SearchRecord.plist; sourceTree = "<group>"; };
 		0BFADC141BD612FB00EA01EA /* VTNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTNetworkManager.h; path = Models/VTNetworkManager.h; sourceTree = "<group>"; };
 		0BFADC151BD612FB00EA01EA /* VTNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTNetworkManager.m; path = Models/VTNetworkManager.m; sourceTree = "<group>"; };
@@ -179,7 +211,6 @@
 		0BFADC621BD8DEC000EA01EA /* time@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "time@3x.png"; sourceTree = "<group>"; };
 		0BFADC691BD9D95200EA01EA /* VTSearchRecordCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTSearchRecordCell.h; path = Views/Cells/VTSearchRecordCell.h; sourceTree = "<group>"; };
 		0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTSearchRecordCell.m; path = Views/Cells/VTSearchRecordCell.m; sourceTree = "<group>"; };
-		0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = VTSearchRecordCell.xib; path = Views/Cells/VTSearchRecordCell.xib; sourceTree = "<group>"; };
 		0BFADCA61BDA344F00EA01EA /* serbox_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serbox_home.png; sourceTree = "<group>"; };
 		0BFADCA81BDDC4DA00EA01EA /* VTDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VTDownloadViewController.h; path = "Controllers/Second Level Controllers/VTDownloadViewController.h"; sourceTree = "<group>"; };
 		0BFADCA91BDDC4DA00EA01EA /* VTDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VTDownloadViewController.m; path = "Controllers/Second Level Controllers/VTDownloadViewController.m"; sourceTree = "<group>"; };
@@ -222,6 +253,8 @@
 				0B16FB901BD0A200007644F5 /* VTSearchViewController.m */,
 				0BFADCA81BDDC4DA00EA01EA /* VTDownloadViewController.h */,
 				0BFADCA91BDDC4DA00EA01EA /* VTDownloadViewController.m */,
+				0BDA5A4F1BDF50EA00B9EC7A /* VTEventDetailViewController.h */,
+				0BDA5A501BDF50EA00B9EC7A /* VTEventDetailViewController.m */,
 			);
 			name = "Second Level Controllers";
 			sourceTree = "<group>";
@@ -340,15 +373,57 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		0BDA5A491BDF094300B9EC7A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0BDA5A4A1BDF12C900B9EC7A /* VTCarouselCell.h */,
+				0BDA5A4B1BDF12C900B9EC7A /* VTCarouselCell.m */,
+				0BDA5A4C1BDF12C900B9EC7A /* VTCarouselCell.xib */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		0BDA5A541BDF522900B9EC7A /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				0BDA5A831BDF52A500B9EC7A /* DLSlide */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		0BDA5A831BDF52A500B9EC7A /* DLSlide */ = {
+			isa = PBXGroup;
+			children = (
+				0BDA5A841BDF52FA00B9EC7A /* DLCacheProtocol.h */,
+				0BDA5A851BDF52FA00B9EC7A /* DLCustomSlideView.h */,
+				0BDA5A861BDF52FA00B9EC7A /* DLCustomSlideView.m */,
+				0BDA5A871BDF52FA00B9EC7A /* DLFixedTabbarView.h */,
+				0BDA5A881BDF52FA00B9EC7A /* DLFixedTabbarView.m */,
+				0BDA5A891BDF52FA00B9EC7A /* DLLRUCache.h */,
+				0BDA5A8A1BDF52FA00B9EC7A /* DLLRUCache.m */,
+				0BDA5A8B1BDF52FA00B9EC7A /* DLScrollTabbarView.h */,
+				0BDA5A8C1BDF52FA00B9EC7A /* DLScrollTabbarView.m */,
+				0BDA5A8D1BDF52FA00B9EC7A /* DLSlideTabbarProtocol.h */,
+				0BDA5A8E1BDF52FA00B9EC7A /* DLSlideView.h */,
+				0BDA5A8F1BDF52FA00B9EC7A /* DLSlideView.m */,
+				0BDA5A901BDF52FA00B9EC7A /* DLTabedSlideView.h */,
+				0BDA5A911BDF52FA00B9EC7A /* DLTabedSlideView.m */,
+				0BDA5A921BDF52FA00B9EC7A /* DLUtility.h */,
+				0BDA5A931BDF52FA00B9EC7A /* DLUtility.m */,
+			);
+			name = DLSlide;
+			sourceTree = "<group>";
+		};
 		0BFADC221BD62B9600EA01EA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0BDA5A491BDF094300B9EC7A /* Home */,
 				0BFADC231BD62C4800EA01EA /* VTLWideCell.h */,
 				0BFADC241BD62C4800EA01EA /* VTLWideCell.m */,
 				0BFADC251BD62C4800EA01EA /* VTLWideCell.xib */,
 				0BFADC691BD9D95200EA01EA /* VTSearchRecordCell.h */,
 				0BFADC6A1BD9D95200EA01EA /* VTSearchRecordCell.m */,
-				0BFADC6B1BD9D95200EA01EA /* VTSearchRecordCell.xib */,
+				0BDA5A9B1BDF57E800B9EC7A /* VTSearchRecordCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -407,6 +482,7 @@
 		17EE8C181BCA60910062C64E /* VTClient */ = {
 			isa = PBXGroup;
 			children = (
+				0BDA5A541BDF522900B9EC7A /* Third Party */,
 				17EE8C1C1BCA60910062C64E /* AppDelegate.h */,
 				17EE8C1D1BCA60920062C64E /* AppDelegate.m */,
 				17EE8C221BCA60920062C64E /* Main.storyboard */,
@@ -535,6 +611,7 @@
 				0BB038291BCF88D000F95A37 /* w4@3x.png in Resources */,
 				0BFADC271BD62C4800EA01EA /* VTLWideCell.xib in Resources */,
 				0BFADC661BD8DEC000EA01EA /* time.png in Resources */,
+				0BDA5A9C1BDF57E800B9EC7A /* VTSearchRecordCell.xib in Resources */,
 				0BB038461BCF960600F95A37 /* tabbar2.png in Resources */,
 				0BB0384D1BCF960600F95A37 /* tabbar4@2x.png in Resources */,
 				0BB038281BCF88D000F95A37 /* w4@2x.png in Resources */,
@@ -553,11 +630,11 @@
 				0BB038591BCF960600F95A37 /* tabbaract4@2x.png in Resources */,
 				0BB038241BCF88D000F95A37 /* w3.png in Resources */,
 				0BFADC131BD5ED9300EA01EA /* SearchRecord.plist in Resources */,
+				0BDA5A4E1BDF12C900B9EC7A /* VTCarouselCell.xib in Resources */,
 				0BB038201BCF88D000F95A37 /* w1@3x.png in Resources */,
 				0BB038431BCF960600F95A37 /* tabbar1.png in Resources */,
 				0BB0381F1BCF88D000F95A37 /* w1@2x.png in Resources */,
 				0B16FB7E1BD08EDD007644F5 /* download@3x.png in Resources */,
-				0BFADC6D1BD9D95200EA01EA /* VTSearchRecordCell.xib in Resources */,
 				0B16FB971BD0C42F007644F5 /* backt@3x.png in Resources */,
 				0BB038551BCF960600F95A37 /* tabbaract3.png in Resources */,
 				0B16FB851BD0965C007644F5 /* history.png in Resources */,
@@ -632,10 +709,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BFADC161BD612FB00EA01EA /* VTNetworkManager.m in Sources */,
+				0BDA5A9A1BDF52FA00B9EC7A /* DLUtility.m in Sources */,
 				0BFADC331BD8742300EA01EA /* VTTextField.m in Sources */,
 				0B17BBBE1BCFA371001A6781 /* VTChannelsTableViewController.m in Sources */,
 				176146201BCBB53B00DB7019 /* VTMainTabBarController.m in Sources */,
+				0BDA5A521BDF50EA00B9EC7A /* VTEventDetailViewController.m in Sources */,
 				0BFADC2A1BD72C1600EA01EA /* VTEvent.m in Sources */,
+				0BDA5A941BDF52FA00B9EC7A /* DLCustomSlideView.m in Sources */,
+				0BDA5A4D1BDF12C900B9EC7A /* VTCarouselCell.m in Sources */,
 				0B17BBC01BCFA371001A6781 /* VTHomeViewController.m in Sources */,
 				0BFADCAA1BDDC4DA00EA01EA /* VTDownloadViewController.m in Sources */,
 				176146041BCBADED00DB7019 /* VTWelcomeViewController.m in Sources */,
@@ -643,12 +724,17 @@
 				0BFADC1E1BD61B4800EA01EA /* JsonParser.m in Sources */,
 				0BFADC261BD62C4800EA01EA /* VTLWideCell.m in Sources */,
 				176145F71BCBA89B00DB7019 /* VTUser.m in Sources */,
+				0BDA5A971BDF52FA00B9EC7A /* DLScrollTabbarView.m in Sources */,
+				0BDA5A981BDF52FA00B9EC7A /* DLSlideView.m in Sources */,
+				0BDA5A991BDF52FA00B9EC7A /* DLTabedSlideView.m in Sources */,
 				17EE8C1E1BCA60920062C64E /* AppDelegate.m in Sources */,
 				0B17BBC11BCFA371001A6781 /* VTMineTableViewController.m in Sources */,
 				0B17BBBF1BCFA371001A6781 /* VTDiscoverViewController.m in Sources */,
 				17EE8C271BCA60920062C64E /* VTClient.xcdatamodeld in Sources */,
 				17EE8C1B1BCA60910062C64E /* main.m in Sources */,
 				0BFADC1B1BD6163D00EA01EA /* Utility.m in Sources */,
+				0BDA5A961BDF52FA00B9EC7A /* DLLRUCache.m in Sources */,
+				0BDA5A951BDF52FA00B9EC7A /* DLFixedTabbarView.m in Sources */,
 				0BFADC211BD61DA000EA01EA /* VTMovie.m in Sources */,
 				0BFADC6C1BD9D95200EA01EA /* VTSearchRecordCell.m in Sources */,
 			);

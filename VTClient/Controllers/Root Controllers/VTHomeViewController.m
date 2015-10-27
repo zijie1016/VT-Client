@@ -8,11 +8,14 @@
 
 #import "VTHomeViewController.h"
 #import "VTDownloadViewController.h"
+#import "VTCarouselCell.h"
 
-@interface VTHomeViewController () <UITextFieldDelegate>
+@interface VTHomeViewController () <UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *navBar;
 
+
+@property (nonatomic, strong)VTCarouselCell *carouselCell;
 
 @end
 
@@ -42,7 +45,7 @@
 
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     //隐藏系统导航栏
     self.navigationController.navigationBarHidden = YES;
@@ -55,6 +58,51 @@
     return NO;
 }
 
+#pragma mark - UITableView Delegate/Datasource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+        {
+            return [self.carouselCell getHeight];
+        }
+            
+        default:
+            return 0;
+    }
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"indexPath.row: %ld", indexPath.row);
+    switch (indexPath.row) {
+        case 0:
+        {// 轮播图
+            NSLog(@"cell 1");
+            static NSString *identifier = @"VTCarouselCell";
+            self.carouselCell = [tableView dequeueReusableCellWithIdentifier:identifier];
+            if(!self.carouselCell)
+            {
+                self.carouselCell = [[[NSBundle mainBundle]loadNibNamed:@"VTCarouselCell" owner:self options:nil]lastObject];
+            }
+            
+            self.carouselCell.navigationController = self.navigationController;
+            //self.carouselCell.scrollView.delegate = self;
+            
+            return self.carouselCell;
+        }
+            
+            
+        default:
+            return nil;
+    }
+}
 
 
 #pragma mark - Actions

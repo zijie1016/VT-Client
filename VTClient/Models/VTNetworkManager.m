@@ -10,6 +10,7 @@
 #import "Global.h"
 #import "JsonParser.h"
 #import "VTMovie.h"
+#import "VTEvent.h"
 
 @implementation VTNetworkManager
 
@@ -40,5 +41,35 @@
     
     NSLog(@"SerachMovieByKeyWord and Callback");
 }
+
+//请求首页热点话题
++(void)requestHotTopicBySubId:(NSString *)SubId andPageSize:(NSString *)pageSize andCallback:(Callback)callback;
+{
+    NSString *basepath = @"push!list.do";
+    NSString *path = [NSString stringWithFormat:@"%@%@",host_url,basepath];
+    NSDictionary *params = @{@"subId":SubId,@"pageSize":pageSize};
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager setResponseSerializer:[AFHTTPResponseSerializer serializer]];
+    [manager GET:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"请求成功");
+        NSMutableArray *topics = [NSMutableArray array];
+        NSArray *arr = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
+        if ([arr isMemberOfClass:[NSNull class]])
+        {
+            callback(arr);
+            return ;
+        }
+        for (NSDictionary *topicDic in arr)
+        {
+            VTEvent *topic = [JsonParser parserEventByDic:topicDic];
+            [topics addObject:topic];
+        }
+        callback(topics);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    
+}
+
 
 @end

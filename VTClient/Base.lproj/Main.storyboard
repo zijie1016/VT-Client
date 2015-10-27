@@ -93,6 +93,9 @@
                                             <segment title="已完成"/>
                                         </segments>
                                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="selectView:" destination="18b-oH-Btt" eventType="valueChanged" id="kne-VY-73B"/>
+                                        </connections>
                                     </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
@@ -104,16 +107,36 @@
                                     <constraint firstAttribute="trailing" secondItem="WcS-nK-4JN" secondAttribute="trailing" constant="80" id="rfT-4q-S8q"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xM-lX-1gY">
+                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pBW-Tt-nup">
+                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pBW-Tt-nup" firstAttribute="top" secondItem="7PK-pa-7Hr" secondAttribute="bottom" id="5pA-8N-cMx"/>
+                            <constraint firstAttribute="trailing" secondItem="pBW-Tt-nup" secondAttribute="trailing" id="EWd-sj-Qm4"/>
+                            <constraint firstItem="pBW-Tt-nup" firstAttribute="leading" secondItem="c6Y-xp-TuD" secondAttribute="leading" id="MDr-gq-zbg"/>
+                            <constraint firstItem="4xM-lX-1gY" firstAttribute="leading" secondItem="c6Y-xp-TuD" secondAttribute="leading" id="R5N-8f-H1r"/>
+                            <constraint firstItem="L2g-R3-res" firstAttribute="top" secondItem="4xM-lX-1gY" secondAttribute="bottom" id="aRl-Gp-tN9"/>
                             <constraint firstItem="7PK-pa-7Hr" firstAttribute="top" secondItem="N2w-sD-uWg" secondAttribute="bottom" id="c4P-XK-5AG"/>
+                            <constraint firstItem="4xM-lX-1gY" firstAttribute="top" secondItem="7PK-pa-7Hr" secondAttribute="bottom" id="fX2-4M-5br"/>
                             <constraint firstItem="7PK-pa-7Hr" firstAttribute="leading" secondItem="c6Y-xp-TuD" secondAttribute="leading" id="ksa-U9-lFR"/>
+                            <constraint firstItem="L2g-R3-res" firstAttribute="top" secondItem="pBW-Tt-nup" secondAttribute="bottom" id="lyx-dS-bIE"/>
                             <constraint firstAttribute="trailing" secondItem="7PK-pa-7Hr" secondAttribute="trailing" id="npm-bb-bT0"/>
+                            <constraint firstAttribute="trailing" secondItem="4xM-lX-1gY" secondAttribute="trailing" id="rha-Es-Ojg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="下载管理" id="gir-tZ-McS"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="completedView" destination="pBW-Tt-nup" id="iQ1-jb-6CJ"/>
+                        <outlet property="downloadingView" destination="4xM-lX-1gY" id="lXF-U5-bzI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrN-hZ-xn0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,12 +225,25 @@
                                     <constraint firstItem="ItW-HW-TzH" firstAttribute="leading" secondItem="ZkS-iD-PSI" secondAttribute="trailing" constant="10" id="yPh-wd-CHv"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xqw-bv-Zid">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9b2-0e-nIT" id="we0-ZH-F8H"/>
+                                    <outlet property="delegate" destination="9b2-0e-nIT" id="5rr-4Q-40L"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mU1-jv-Ibf" firstAttribute="top" secondItem="Xqw-bv-Zid" secondAttribute="bottom" id="92r-ef-ina"/>
                             <constraint firstAttribute="trailing" secondItem="AD7-eL-qP7" secondAttribute="trailing" id="Rjo-la-nlf"/>
                             <constraint firstItem="AD7-eL-qP7" firstAttribute="leading" secondItem="fK0-vh-OdH" secondAttribute="leading" id="SF0-d9-woE"/>
+                            <constraint firstItem="Xqw-bv-Zid" firstAttribute="leading" secondItem="fK0-vh-OdH" secondAttribute="leading" id="XxJ-Kk-Ue1"/>
+                            <constraint firstAttribute="trailing" secondItem="Xqw-bv-Zid" secondAttribute="trailing" id="eWA-Us-Q5C"/>
                             <constraint firstItem="AD7-eL-qP7" firstAttribute="top" secondItem="fK0-vh-OdH" secondAttribute="top" id="j13-aq-CTd"/>
+                            <constraint firstItem="Xqw-bv-Zid" firstAttribute="top" secondItem="AD7-eL-qP7" secondAttribute="bottom" id="jGN-PZ-0KN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nfJ-Ch-Chu"/>
@@ -345,6 +381,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ZH-On-NhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1744" y="-765"/>
+        </scene>
+        <!--活动详情-->
+        <scene sceneID="URY-Jp-EJr">
+            <objects>
+                <viewController storyboardIdentifier="VTEventDetailViewController" id="etM-ad-7ct" customClass="VTEventDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KTl-iz-XIu"/>
+                        <viewControllerLayoutGuide type="bottom" id="aBP-zh-ely"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WXe-1b-q3u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="活动详情" id="sXn-4o-1Ox"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YCR-d8-ZWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152" y="-765"/>
         </scene>
         <!--发现-->
         <scene sceneID="VjX-AC-Xhy">

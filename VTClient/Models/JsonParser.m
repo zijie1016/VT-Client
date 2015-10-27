@@ -7,6 +7,9 @@
 //
 
 #import "JsonParser.h"
+#import "VTMovie.h"
+#import "VTEvent.h"
+
 
 @implementation JsonParser
 
@@ -30,5 +33,24 @@
     
 }
 
+//解析首页活动
++(VTEvent *)parserEventByDic:(NSDictionary *)dic
+{
+    VTEvent *event = [[VTEvent alloc] init];
+    event.eventName = [dic objectForKey:@"title"];
+    event.eventBeginTime = [dic objectForKey:@"beginDate"];
+    event.eventEndTiem = [dic objectForKey:@"endDate"];
+    event.eventLogoName = [dic objectForKey:@"logoName"];
+    event.eventImageUrl = [[dic objectForKey:@"logoUrl"] stringByAppendingString:event.eventLogoName];
+    event.mainId = [dic objectForKey:@"infoMainId"];
+    event.content = [dic objectForKey:@"content"];
+    event.content = [event.content stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    event.content = [event.content stringByReplacingOccurrencesOfString:@"</br>" withString:@""];
+    event.content = [event.content stringByReplacingOccurrencesOfString:@"<br />" withString:@""];
+    event.content = [event.content stringByReplacingOccurrencesOfString:@"〈；br〉；" withString:@""];
+    event.content = [event.content stringByReplacingOccurrencesOfString:@"<strong>" withString:@""];
+    event.content = [event.content stringByReplacingOccurrencesOfString:@"</strong>" withString:@""];
+    return event;
+}
 
 @end

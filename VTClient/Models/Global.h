@@ -34,6 +34,9 @@ static NSString *host_url=@"http://192.168.0.116:8080/v2api_war/";
 #define kTextFieldHeight		 30.0
 #define kTextFieldWidth	        180.0
 
+#define kScreenWidth            [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight           [UIScreen mainScreen].bounds.size.height
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
