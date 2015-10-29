@@ -12,7 +12,7 @@
 
 @class VTEvent;
 
-@interface VTEventDetailViewController : UIViewController //<DLTabedSlideViewDelegate>
+@interface VTEventDetailViewController : UIViewController 
 
 @property (nonatomic,strong) VTEvent *event;
 

@@ -82,7 +82,7 @@
     NSLog(@"-----------点我-----点我------");
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     VTEventDetailViewController *edvc = [storyboard instantiateViewControllerWithIdentifier:@"VTEventDetailViewController"];
-    //edvc.event = self.currentEvent;
+    edvc.event = self.currentEvent;
     [self.navigationController pushViewController:edvc animated:YES];
 
 }
