@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIView *profileView;
 
-@property (weak, nonatomic) VTMineTableViewController *tableViewController;
+@property (weak, nonatomic) VTMineTableViewController *delegate;
 
 - (CGFloat)getHeight;
 

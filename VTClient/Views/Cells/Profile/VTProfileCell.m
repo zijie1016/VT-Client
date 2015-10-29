@@ -34,9 +34,9 @@
 {
     // 模式跳转到登录/注册界面
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UINavigationController *nav = [storyboard instantiateViewControllerWithIdentifier:@"nav"];
+    UINavigationController *nav = [storyboard instantiateViewControllerWithIdentifier:@"navlogin"];
     
-    [self.tableViewController presentViewController:nav animated:YES completion:nil];
+    [self.delegate presentViewController:nav animated:YES completion:nil];
 }
 
 @end

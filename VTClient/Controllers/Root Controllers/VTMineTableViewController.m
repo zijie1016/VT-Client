@@ -8,7 +8,7 @@
 
 #import "VTMineTableViewController.h"
 #import "VTProfileCell.h"
-
+#import "VTSignUpTableViewController.h"
 @interface VTMineTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)VTProfileCell *profileCell;
@@ -20,10 +20,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
- 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stepTo:) name:@"step" object:nil];
 }
 
-
+-(void)stepTo:(NSNotification *)notif
+{
+    NSLog(@"-----------");
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *vc = [storyboard instantiateViewControllerWithIdentifier:@"navsignup"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 #pragma mark - Table view data source
 
@@ -78,9 +84,7 @@
                     {
                         self.profileCell = [[[NSBundle mainBundle]loadNibNamed:@"VTProfileCell" owner:self options:nil]lastObject];
                     }
-                    
-                    self.profileCell.tableViewController = self;
-                    
+                    self.profileCell.delegate = self;
                     return self.profileCell;
                 }
                     
